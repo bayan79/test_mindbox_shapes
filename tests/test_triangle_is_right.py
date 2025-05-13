@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from shapes import Triangle
+from shape_area import Triangle
 
 
 class TriangleIsRightTest(TestCase):

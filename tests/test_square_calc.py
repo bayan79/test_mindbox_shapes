@@ -2,7 +2,7 @@ import math
 import random
 from unittest import TestCase
 
-from shapes import Circle, Triangle
+from shape_area.shapes import Circle, Triangle
 
 
 class SquareCalcTest(TestCase):
@@ -22,9 +22,10 @@ class SquareCalcTest(TestCase):
             y = [random.random() * 100 for _ in range(3)]
 
             # calc test area by coords
-            area = abs(
-                x[0] * (y[1] - y[2]) + x[1] * (y[2] - y[0]) + x[2] * (y[0] - y[1])
-            ) / 2
+            area = (
+                abs(x[0] * (y[1] - y[2]) + x[1] * (y[2] - y[0]) + x[2] * (y[0] - y[1]))
+                / 2
+            )
 
             # calc edges
             edges = [

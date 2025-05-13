@@ -2,9 +2,7 @@ import math
 import random
 from unittest import TestCase
 
-from shapes import Triangle
-from shapes.base import BaseShape
-from shapes.circle.shape import Circle
+from shape_area.shapes import BaseShape, Circle, Triangle
 
 
 class ShapeCreationTest(TestCase):

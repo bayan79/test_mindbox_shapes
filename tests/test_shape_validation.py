@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from shapes import Circle, Triangle
+from shape_area.shapes import Circle, Triangle
 
 
 class ShapeValidationTest(TestCase):

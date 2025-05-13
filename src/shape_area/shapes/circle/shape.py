@@ -1,6 +1,6 @@
 import math
 
-from shapes.base import BaseShape
+from shape_area.shapes.base import BaseShape
 
 
 class Circle(BaseShape):
@@ -10,5 +10,5 @@ class Circle(BaseShape):
     def check_is_valid(self) -> bool:
         return self.r >= 0
 
-    def calc_shape(self) -> float:
+    def calc_square(self) -> float:
         return self.r**2 * math.pi

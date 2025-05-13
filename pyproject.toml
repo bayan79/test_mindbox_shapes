@@ -1,0 +1,14 @@
+[project]
+name = "shape_area"
+version = "0.1.0"
+description = "Package for calculating shapes area"
+readme = "README.md"
+authors = [
+    { name = "Kirill", email = "bayandink@yandex.ru" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

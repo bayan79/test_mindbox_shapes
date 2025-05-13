@@ -1,6 +1,6 @@
 import math
 
-from shapes.base import BaseShape
+from shape_area.shapes.base import BaseShape
 
 
 class Triangle(BaseShape):
@@ -20,7 +20,7 @@ class Triangle(BaseShape):
             and sorted_edges[0] + sorted_edges[1] >= sorted_edges[2]
         )
 
-    def calc_shape(self) -> float:
+    def calc_square(self) -> float:
         s = sum(self.edges) / 2
         return math.sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
 

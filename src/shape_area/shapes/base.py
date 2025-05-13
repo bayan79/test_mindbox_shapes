@@ -1,6 +1,6 @@
 from typing import Self, Type
 
-from mixins.squarable import Squarable
+from shape_area.mixins.squarable import Squarable
 
 
 class BaseShape(Squarable):

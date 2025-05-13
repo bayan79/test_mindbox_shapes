@@ -1,3 +1,3 @@
 class Squarable:
-    def calc_shape(self) -> float:
+    def calc_square(self) -> float:
         raise NotImplementedError

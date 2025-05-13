@@ -11,9 +11,9 @@ class SquareCalcTest(TestCase):
             radius = random.random() * 100
             self.assertAlmostEqual(
                 radius * radius * math.pi,
-                Circle(radius).calc_shape(),
+                Circle(radius).calc_square(),
             )
-        self.assertAlmostEqual(0, Circle(0).calc_shape())
+        self.assertAlmostEqual(0, Circle(0).calc_square())
 
     def test_triangle_square_calc_success(self):
         for _ in range(10):
@@ -40,6 +40,6 @@ class SquareCalcTest(TestCase):
                 ]
             ]
 
-            self.assertAlmostEqual(area, Triangle(*edges).calc_shape())
+            self.assertAlmostEqual(area, Triangle(*edges).calc_square())
 
-        self.assertAlmostEqual(0, Triangle(0, 0, 0).calc_shape())
+        self.assertAlmostEqual(0, Triangle(0, 0, 0).calc_square())

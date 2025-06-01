@@ -3,7 +3,12 @@ For now supports followed shapes:
 - circle
 - triangle
 
-## install
+## build lib 
+```bash
+uv build
+```
+
+## install lib
 ```bash
 pip install dist/shape_area-0.1.0-py3-none-any.whl
 ```
